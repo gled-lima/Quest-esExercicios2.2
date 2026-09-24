@@ -1,5 +1,155 @@
-Programas em C
+Traduzir programas para C:
 
 Programa 1:
 
-- 
+  #include <stdio.h>
+  
+  int main()
+  {
+      int ANO_ATUAL = 2026;
+      int ano;
+      printf("Ano de nascimento: ");
+      scanf("%d", &ano);
+      printf("Idade: %d\n", ANO_ATUAL - ano);
+      return 0;
+  }
+
+
+Programa 2:
+
+    #include <stdio.h>
+    
+    int main() 
+    {
+        int a, b;
+        printf("Dividendo e divisor: ");
+        scanf("%d %d", &a, &b);
+        printf("Quociente: %d\n", a / b);
+        printf("Resto: %d\n", a % b);
+        return 0;
+    }
+
+
+Programa 3:
+
+    #include <stdio.h>
+    
+    int main() {
+        float n1, n2, n3; 
+        float media;
+        printf("Três notas:");
+        scanf("%f %f %f", &n1, &n2, &n3);
+        media = (n1+n2+n3)/3;
+        printf("Media:%.2f\n", media);
+        return 0;
+    }
+
+
+Programa 4:
+
+    #include <stdio.h>
+    
+    int main() 
+    {
+        float c, f;
+        printf("Celsius:");
+        scanf("%f",&c);
+        f = (c*9)/(5+32);
+        printf("Fahrenheit: %.1f\n", f);
+        return 0;
+    }
+
+
+Programa 5:
+
+    #include <stdio.h>
+    
+    int main() 
+    {
+        float base;
+        float altura;
+        printf("Base e altura: ");
+        scanf("%f %f", &base, &altura);
+        printf("Area: %.2f\n", base*altura);
+        printf("Perimetro:%.2f\n", 2*(base+altura));
+        return 0;
+    }
+
+
+Programa 6:
+
+    #include <stdio.h>
+    #define PI 3.14159
+    
+    int main() 
+    {
+        float raio;
+        printf("Raio:");
+        scanf("%f", &raio);
+        printf("Area: %.2f\n", PI*raio*raio);
+        return 0;
+    }
+
+
+Programa 7:
+
+    #include <stdio.h>
+  
+    int main()
+    {
+        int total, horas, minutos, segundos;
+        printf("Total de segundos:");
+        scanf("%d",&total);
+        horas =total/3600;
+        minutos =(total%3600)/60;
+        segundos =total%60;
+        printf("%dh%dmin%ds\n",horas,minutos,segundos);
+        return 0;
+    }
+
+Programa 8:
+
+    #include <stdio.h>
+    
+    int main() 
+    {
+        int n;
+        printf("Numero de 3 digitos:");
+        scanf("%d",&n);
+        printf("Centena: %d\n",n/100);
+        printf("Dezena: %d\n",(n/10)%10);
+        printf("Unidade: %d\n",n%10);
+        return 0;
+    }
+
+Programa 9:
+
+    #include <stdio.h>
+    
+        int main() 
+        {
+            int n;
+            printf("Um inteiro:");
+            scanf("%d",&n);
+            printf("Par e positivo?%d\n",(n%2==0)&&(n>0));
+            return 0;
+        }
+
+    SAIDA:
+    Par e positivo? 1
+    A resposta é simples, em C, 1 significa verdadeiro e 0 significa falso.
+
+Programa 10:
+
+    #include <stdio.h>
+    
+    int main() 
+    {
+        char c;
+        printf("Um caractere:");
+        scanf(" %c",&c);
+        printf("Codigo ASCII de %c:%d\n",c,c);
+        return 0;
+    }
+
+
